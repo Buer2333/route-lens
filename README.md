@@ -26,6 +26,13 @@ Type `/route` for the details pane: the files and hooks behind each count, and y
 
 route-lens only watches. Every hook it adds returns exactly what the engine returned: it never changes, delays or blocks a tool call, a prompt or another hook.
 
+## Data handling
+
+- **Reads:** the tool calls and hook results of the session it runs in (tool name and arguments, e.g. which skill ran, which file was read), as Claude Code hands them to the mod. Nothing else.
+- **Writes:** one local file per session, `~/.claude/route-lens/<session id>.txt`, holding the one-line summary. Nothing else on disk; no settings are changed.
+- **Network:** none. route-lens makes no requests and sends nothing anywhere.
+- **Behaviour:** it never changes, delays or blocks a tool call, prompt or hook; it only records what happened.
+
 ## Install
 
 At the prompt of a Claude Code terminal session (v2.1.287 or later):
@@ -111,6 +118,13 @@ MIT licence.
 敲 `/route` 打开详情：每一项具体是哪些文件、哪些 hook，以及之前的指令（每条一行）。
 
 route-lens 只看不改：它挂的每个 hook 都原样返回引擎的结果，不会修改、拖延或拦下任何工具调用、提示或别的 hook。
+
+### 数据处理
+
+- **读取：** 只读所在会话的工具调用和 hook 结果（工具名和参数，比如调了哪个 skill、读了哪个文件），由 Claude Code 交给 mod。别的都不读。
+- **写入：** 每个会话一个本地文件 `~/.claude/route-lens/<会话 ID>.txt`，存那一行摘要。不写别的文件，不改任何设置。
+- **联网：** 不联网，不发出任何请求，不外发任何数据。
+- **行为：** 不修改、拖延或拦下任何工具调用、提示或 hook，只记录发生了什么。
 
 ### 安装
 

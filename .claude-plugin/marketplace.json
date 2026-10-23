@@ -1,5 +1,13 @@
 {
   "name": "route-lens",
-  "owner": { "name": "Buer2333" },
-  "plugins": [{ "name": "route-lens", "source": "./" }]
+  "description": "route-lens: see which route Claude took for each instruction — skills, agents, memory, rules and hooks.",
+  "owner": {
+    "name": "Buer2333"
+  },
+  "plugins": [
+    {
+      "name": "route-lens",
+      "source": "./"
+    }
+  ]
 }
