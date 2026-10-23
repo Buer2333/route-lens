@@ -1,0 +1,17 @@
+{
+  "name": "route-lens",
+  "version": "0.1.0",
+  "description": "See which route Claude took for each instruction: skills, agents, memory and references it used, memory it skipped, and hooks that blocked it.",
+  "author": { "name": "Buer2333", "url": "https://github.com/Buer2333" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Language",
+      "description": "Interface language: en (English) or zh (中文)",
+      "options": ["en", "zh"],
+      "default": "en"
+    }
+  }
+}

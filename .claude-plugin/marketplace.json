@@ -1,0 +1,5 @@
+{
+  "name": "route-lens",
+  "owner": { "name": "Buer2333" },
+  "plugins": [{ "name": "route-lens", "source": "./" }]
+}
